@@ -34,8 +34,9 @@ namespace HWills_CS2_Week3.Controllers
                         sumSq += i * i;
                         standDev = Math.Sqrt((sumSq - sum * sum / count) / (count - 1));
                         stringyList.Add(count + ": Current S.D.: " + standDev);
+                        //sConsole.WriteLine(LogObject(stringyList));
                     }
-               }
+                }
             }
             catch(Exception e)
             {
@@ -45,6 +46,10 @@ namespace HWills_CS2_Week3.Controllers
             Console.WriteLine("Sum: " + sum);
 
             return Accepted(stringyList);
+        }
+        string LogObject(string input)
+        {
+            return input;
         }
     }
 }
